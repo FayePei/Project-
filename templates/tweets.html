@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tweets for {{user}}</title>
+</head>
+<style type="text/css">
+a:link {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+</style>
+<body>
+    
+<h1 style="font-size:130%; font-family:Verdana, sans-serif;">Tweets for {{user}}</h1>
+
+<p style="font-size:80%; font-family:Verdana, sans-serif;">Median sentiment score: {{med_score}} (-1.0 negative to 1.0 positive)
+
+<ul>
+{{content|safe}}
+</ul>
+
+</body>
+</html>
